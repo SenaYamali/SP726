@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <!-- External Javascrip Import -->
+    <script src="Script1.js"></script>
+    <style>
+        .container {
+            display: grid;
+            background-color: darkgrey;
+            /*
+              Paydalı Dilimleme İşlemi
+              Örnek: 4 tane kullandığımız için her bir kolon 1/4 kesir oranında olacak.
+           */
+            grid-template-columns: 1fr 1fr 1fr ;
+            height: auto;
+            column-gap: 5px;
+            row-gap: 5px;
+        }
+
+        .kutu {
+            background-color: cadetblue;
+        }
+        .buton{
+            margin:auto;
+
+        }
+        main section buton {
+            float:left
+        }
+    </style>
+</head>
+<body>
+ 
+    <section class="container">
+
+        <section class="kutu">
+            <button class="buton" onclick="sayiToplam()">Toplama</button>
+        </section>
+        <section class="kutu">
+            
+            <button class="buton" onmouseover="alertYazdir()">Alert</button>
+            <p id="kelime">Selam</p>
+        </section>
+        <section class="kutu">
+            
+            <button class="buton" onclick="borderDegis()">Kenarlık Değiştir</button>
+        </section>
+         </section>
+</body>
+</html>
