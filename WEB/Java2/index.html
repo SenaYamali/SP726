@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="Script1.js" defer="true"></script>
+    <style>
+    .container {
+    border: 2px solid #572222;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 5px;
+    row-gap: 5px;
+    padding: 15px;
+    border-radius: 3px;
+    }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <section class="kutu" id="kutu1">
+            <p id="ekle">Sayılar</p>
+            <input type="text" id="input_sayi" />
+            <br /><br />
+            <button onclick="sayiDeger()">Sayı Değeri</button>
+        </section>
+        <section class="kutu" id="kutu2" >
+            <input type="color" id="input_renk" onchange="renkDegistir()"/>
+            <br />
+            <br />
+
+
+        </section>
+    </section>
+</body>
+</html>

@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".art").before(" <h3>Makale</h3>");
+            $(".btn1").click(function () {
+                
+                $(".kutu2").css("font-size", $(".font").val() + "px");
+                $(".kutu2").css("background-color", $(".renk").val());
+            });
+        })
+
+
+    </script>
+    <style>
+        .container {
+            border: 2px solid #000000;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 5px;
+            row-gap: 5px;
+            padding: 15px;
+            border-radius: 3px;
+            float: left;
+        }
+
+        btn {
+            width: 50px;
+            height: 20px;
+            font-size: 5px;
+            border-radius: 5px;
+        }
+
+        .kutu {
+            border: 2px solid #000000;
+            border-radius: 5px;
+            padding: 15px;
+        }
+
+        .kutu2 {
+            border-radius: 5px;
+            border: 2px solid #000000;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+
+        <section class="kutu">
+            <input type="color" class="renk" /><br />
+            <input type="text" class="font" /><br />
+            <button type="button" class="btn1">Kaydet</button>
+        </section>
+        <section class="kutu2">
+           
+            <article class="art">Selamın Aleyküm</article>
+
+        </section>
+
+    </main>
+</body>
+</html>
