@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="asp_ders1.Site1" %>
+
+<%@ Register Src="~/nav_Ust_kontrol.ascx" TagPrefix="uc1" TagName="nav_Ust_kontrol" %>
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link rel="stylesheet" href="Css/StyleSheet1.css" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <main>
+        <header id="header_ust">
+            nav menu
+
+        </header>
+        <nav id="nav_ust">
+
+            <uc1:nav_Ust_kontrol runat="server" id="nav_Ust_kontrol" />
+        </nav>
+        <form id="form1" runat="server">
+            <section class="content_section">
+            
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+                </section>
+            
+        </form>
+        <footer id="footer_alt">
+            HEYOO
+
+        </footer>
+    </main>
+</body>
+</html>

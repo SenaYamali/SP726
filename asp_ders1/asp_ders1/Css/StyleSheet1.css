@@ -1,0 +1,74 @@
+﻿main{
+
+    width:900px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+
+}
+header#header_ust{
+
+    background-color:#ac6464;
+    grid-column-start:1;
+    grid-column-end:5;
+    height:130px;
+
+}
+nav#nav_ust{
+
+    background-color:#8f7474;
+    grid-column-start:1;
+    grid-column-end:5;
+    height:45px;
+
+}
+footer#footer_alt{
+
+  background-color:#808080;
+    grid-column-start:1;
+    grid-column-end:5;
+    height:100px;
+}
+section.content_sections{
+    height:auto;
+    background-color:#a72121;
+  float:left;
+  width:100%;
+}
+main form{
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+section.content_section img {
+
+    width:150px;
+    float:left;
+    display:block;
+    
+}
+nav#nav_ust li{
+
+    list-style-type:none;
+    float:left;
+    width:120px;
+
+}
+nav#nav_ust ul{
+    height:45px;
+    padding:0!important;
+    margin:0!important;
+    list-style-type:45px;
+ 
+
+}
+
+.forms {
+float:left;
+
+}
+section.film_kaydet_section{
+
+    padding:25px;
+    background-color:#b5815c
+
+}
