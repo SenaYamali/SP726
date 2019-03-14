@@ -10,42 +10,33 @@
 namespace asp_ders1 {
     
     
-    public partial class nav_Ust_kontrol {
+    public partial class salon {
         
         /// <summary>
-        /// LinkAnasayfa control.
+        /// DataList_Salonlar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink LinkAnasayfa;
+        protected global::System.Web.UI.WebControls.DataList DataList_Salonlar;
         
         /// <summary>
-        /// HyperSalon control.
+        /// txt_SalonAd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperSalon;
+        protected global::System.Web.UI.WebControls.TextBox txt_SalonAd;
         
         /// <summary>
-        /// HyperSinema control.
+        /// btn_SalonKaydet control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperSinema;
-        
-        /// <summary>
-        /// Linkiletisim control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink Linkiletisim;
+        protected global::System.Web.UI.WebControls.Button btn_SalonKaydet;
     }
 }
