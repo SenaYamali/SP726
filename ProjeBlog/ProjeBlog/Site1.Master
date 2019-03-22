@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="ProjeBlog.Site1" %>
+
+<%@ Register Src="~/WebUserControl1.ascx" TagPrefix="uc1" TagName="WebUserControl1" %>
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+      <link rel="stylesheet" href="CSS\StyleSheet1.css" />
+     
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <section class="container">
+                <section class="header">
+                  
+                    <section class="resim">
+
+                       <img src="IMG/logo1.jpg"/>
+                    </section>
+                    <nav id="nav_ust">
+                        <uc1:WebUserControl1 runat="server" ID="WebUserControl1" />
+            </nav>
+
+                </section>
+
+
+            </section>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+            
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

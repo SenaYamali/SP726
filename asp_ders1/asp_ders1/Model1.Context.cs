@@ -32,6 +32,7 @@ namespace asp_ders1
         public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<Yayin> Yayins { get; set; }
         public virtual DbSet<Yayin_Isimli> Yayin_Isimli { get; set; }
+        public virtual DbSet<Blog> Blogs { get; set; }
     
         public virtual int sp_alterdiagram(string diagramname, Nullable<int> owner_id, Nullable<int> version, byte[] definition)
         {

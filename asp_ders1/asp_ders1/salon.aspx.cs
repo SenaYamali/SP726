@@ -11,6 +11,8 @@ namespace asp_ders1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (IsPostBack)
+                return;
             TabloGuncelle();
         }
 
@@ -29,6 +31,44 @@ namespace asp_ders1
             ctx.Salons.Add(s1);
             ctx.SaveChanges();
             TabloGuncelle();
+        }
+
+        protected void DataList_Salonlar_DeleteCommand(object source, DataListCommandEventArgs e)
+        {
+            int txtSalonId = Convert.ToInt32(e.CommandArgument);
+            SINEMAEntities ctx = new SINEMAEntities();
+            Salon s1 = ctx.Salons.Find(txtSalonId);
+            ctx.Salons.Remove(s1);
+            ctx.SaveChanges();
+            TabloGuncelle();
+        }
+
+        protected void DataList_Salonlar_EditCommand(object source, DataListCommandEventArgs e)
+        {
+            DataList_Salonlar.EditItemIndex = e.Item.ItemIndex;
+            TabloGuncelle();
+        }
+
+        protected void DataList_Salonlar_CancelCommand(object source, DataListCommandEventArgs e)
+        {
+            DataList_Salonlar.EditItemIndex = -1;
+            TabloGuncelle();
+        }
+
+        protected void DataList_Salonlar_UpdateCommand(object source, DataListCommandEventArgs e)
+        {
+            int txtSID = Convert.ToInt32(e.CommandArgument);
+            TextBox txtSalonAd = e.Item.FindControl("txt_salon_gun_salonAd") as TextBox;
+
+            SINEMAEntities ctx = new SINEMAEntities();
+         Salon s1 = ctx.Salons.Find(txtSID);
+            s1.SalonID = txtSID;
+            s1.SalonAdi = txtSalonAd.Text;
+       
+            ctx.SaveChanges();
+            DataList_Salonlar.EditItemIndex = -1;
+            TabloGuncelle();
+
         }
     }
 }

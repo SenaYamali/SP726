@@ -7,10 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace asp_ders1 {
+namespace ProjeBlog {
     
     
-    public partial class nav_Ust_kontrol {
+    public partial class WebUserControl1 {
         
         /// <summary>
         /// LinkAnasayfa control.
@@ -22,39 +22,30 @@ namespace asp_ders1 {
         protected global::System.Web.UI.WebControls.HyperLink LinkAnasayfa;
         
         /// <summary>
-        /// HyperSalon control.
+        /// HyperLink1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperSalon;
+        protected global::System.Web.UI.WebControls.HyperLink HyperLink1;
         
         /// <summary>
-        /// HyperSinema control.
+        /// LinkBlog control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperSinema;
+        protected global::System.Web.UI.WebControls.HyperLink LinkBlog;
         
         /// <summary>
-        /// HyperBlog control.
+        /// LinkIletisim control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperBlog;
-        
-        /// <summary>
-        /// Linkiletisim control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink Linkiletisim;
+        protected global::System.Web.UI.WebControls.HyperLink LinkIletisim;
     }
 }

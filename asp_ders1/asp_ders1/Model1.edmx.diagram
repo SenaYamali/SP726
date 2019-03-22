@@ -12,6 +12,7 @@
         <EntityTypeShape EntityType="SINEMAModel.Yayin_Isimli" Width="1.5" PointX="4.75" PointY="4.75" IsExpanded="true" />
         <AssociationConnector Association="SINEMAModel.FK_Yayin_Film" ManuallyRouted="false" />
         <AssociationConnector Association="SINEMAModel.FK_Yayin_Salon" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="SINEMAModel.Blog" Width="1.5" PointX="5.375" PointY="0.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
