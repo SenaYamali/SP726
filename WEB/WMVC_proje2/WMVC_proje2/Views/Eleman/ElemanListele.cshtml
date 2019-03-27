@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "ElemanListele";
+    Layout = "~/Views/_Layout.cshtml";
+}
+@using WMVC_proje2.Models;
+<h2>ElemanListele</h2>
+@foreach (Eleman e in ViewBag.ElemanCantasi)
+{
+    <section style="border:2px solid #ff6a00; background-color:#ffd800; padding:10px;">
+        <section><span>Eleman Adı : </span><span>@e.Ad</span></section>
+        <section><span>Eleman Soyad : </span><span>@e.Soyad</span></section>
+        <section><span>Eleman Şehir : </span><span>@e.Sehir</span></section>
+       
+    </section>
+   
+}
+
+
+
+
